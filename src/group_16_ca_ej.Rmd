@@ -28,3 +28,4 @@ ggplot(data = ces, aes(x = white_percent, y = ces_3_0_score)) +
   theme_minimal()
 ```
 
+There is a negative relationship between the percent of the census tract population identifying as white and the cumulative pollution burden for that census tract, as indicated by the CalEnviroScreen 3.0 aggregate score.
