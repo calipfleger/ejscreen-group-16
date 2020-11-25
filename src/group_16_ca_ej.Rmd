@@ -19,10 +19,12 @@ ces <- read_csv(here("data", "ces3demographics.csv")) %>% clean_names()
 
 ```{r}
 ggplot(data = ces, aes(x = white_percent, y = ces_3_0_score)) +
-  geom_hex()  +
+  geom_hex()  + 
+  labs(title = " CalEnviroScren Score for California Residents that Identify as White",
+        subtitle = "Data Released in 2017") +
         xlab("Percent of Population that Identifies as White (%)") +
         ylab("CalEnviroScreen 3.0 Score") +
-  scale_fill_gradient(low = "darkorchid4", high = "magenta") +
+  scale_fill_gradient(low = "navy", high = "orange") +
   theme_minimal()
 ```
 
